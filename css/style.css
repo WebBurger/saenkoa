@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d99fcf;
+}
+
+.board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.black {
+    background-color: deepskyblue;
+}
+.white {
+    background-color: #eed4ac;
+}
+
+.selected {
+    background-color: brown;
+}
+.available {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #22c022;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    background-color: rgb(89, 226, 123);
+}
+
+#lostFigures{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.b-popup-content{
+    background: white;
+    padding: 10px;
+    position: absolute;
+    top: 320px;
+    right: 20px;
+}
+
+.b-popup-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.b-popup-content p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
